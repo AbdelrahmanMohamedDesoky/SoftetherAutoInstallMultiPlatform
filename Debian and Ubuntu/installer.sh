@@ -10,7 +10,7 @@
 #--------------------------------------------------
 #Updating centos version
 cd /root
-apt-get update -y
+apt-get update -y && apt-get upgrade -y
 apt-get install build-essential -y
 #Downloading server files
 wget https://github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/v4.29-9680-rtm/softether-vpnserver-v4.29-9680-rtm-2019.02.28-linux-x64-64bit.tar.gz
@@ -18,7 +18,7 @@ tar xzvf softether-vpnserver-v4.29-9680-rtm-2019.02.28-linux-x64-64bit.tar.gz
 cd vpnserver
 #Installing server files, Manual input
 clear
-echo  -e "\033[31;7mNOTE: ANSWER 1 AND ENTER THREE TIMES FOR THE COMPILATION TO PROCEED\033[0m"
+echo "Press 1 To Accept Shit 3 times"
 make
 cd /root
 mv vpnserver /usr/local
@@ -36,7 +36,7 @@ update-rc.d vpnserver defaults
 /etc/init.d/vpnserver start
 cd /usr/local/vpnserver
 echo ---------------------------------------------
-echo  -e "\033[32;5mVPN SERVER INSTALLED SUCCESSFULLY!\033[0m"
+echo  "VPN SERVER INSTALLED SUCCESSFULLY!"
 echo "SoftEther auto installer by Abdelrahman Mohamed"
 echo "vpncmd is at /usr/local/vpnserver"
 echo ---------------Commands----------------------
