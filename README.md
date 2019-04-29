@@ -1,6 +1,6 @@
 # Softether Auto Install Multi Platform<br />
 * Softether Auto Install Script for multi platforms updated version<br />
-* Softether VPN server latest version v4.27-9666-beta-2018.04.21
+* Softether VPN server latest version v4.29-9680-rtm-2019.02.28
 
 # Instruction<br />
 Choose your desired platform folder<br />
